@@ -1,0 +1,516 @@
+:root {
+	--clr-gray-900: hsla(0, 0%, 7%, 1);
+	--clr-gray-800: hsla(0, 0%, 9%, 1);
+	--clr-gray-700: hsla(0, 0%, 13%, 1);
+	--clr-gray-200: hsla(0, 0%, 80%, 1);
+	--clr-white: hsla(0, 0%, 100%, 1);
+	--clr-white-a08: hsla(0, 0%, 100%, 0.08);
+	--clr-white-a25: hsla(0, 0%, 100%, 0.25);
+	--clr-white-a40: hsla(0, 0%, 100%, 0.40);
+	
+	--clr-bg: var(--clr-gray-900);
+	--clr-primary-txt: var(--clr-white);
+	--clr-secondary-txt: var(--clr-gray-200);
+	--clr-surface-hover: var(--clr-gray-800);
+	--clr-surface-stroke: var(--clr-gray-700);
+	--clr-surface-stroke-hover: var(--clr-white-a25);
+
+	font-size: 62.5%;
+}
+
+/* RESET STYLES */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+article,
+section,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+	
+}
+
+ul li {
+	margin:0;
+	padding: 0;
+	text-indent: 0;
+	list-style-type: 0;
+ }
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+	scroll-behavior: auto;
+	}
+}
+
+*,
+*::before,
+*::after {
+	animation-duration: 0.01ms !important;
+	animation-iteration-count: 1 !important;
+	transition-duration: 0.01ms !important;
+	scroll-behavior: auto !important;
+}
+
+/* SET DEFAULT FOR BODY AND TEXTS*/
+body {
+	background-color: var(--clr-bg);
+	font-size: 1.6rem;
+	font-weight: 400;
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+h1{
+	color: var(--clr-primary-txt);
+	font-family: 'Inter', sans-serif;
+	font-size: 3.2rem;
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 0 2rem 0;
+}
+
+h2{
+	color: var(--clr-primary-txt);
+	font-family: 'Inter', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0 0 2rem 0;
+}
+
+h3{
+	color: var(--clr-primary-txt);
+	font-family: 'Inter', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1;
+	margin: 0;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: var(--clr-primary-txt);
+}
+
+p, ul {
+	color:var(--clr-secondary-txt);
+	font-family: 'Inter', sans-serif;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.8;
+}
+
+p a{
+	font-weight: 400;
+	color: var(--clr-secondary-txt);
+}
+
+p a:hover{
+	text-decoration: underline;
+}
+
+strong{
+	font-weight: 500;
+}
+
+ul{
+	list-style-position: outside;
+}
+
+ul li{
+	margin-bottom: 0.8rem;
+}
+
+ul a{
+	font-weight: 400;
+	color: var(--clr-secondary-txt);
+}
+
+ul a:hover{
+	text-decoration: underline;
+	color: var(--clr-white);
+}
+
+/* COMPONENTS */
+
+.primary-button {
+	color: #fff;
+	background-color: var(--clr-white-a08);
+	border: 1px solid var(--clr-white-a08);
+	border-radius: 3.2rem;
+	align-items: center;
+	padding: 1rem 1.6rem;
+	font-weight: 400;
+	text-decoration: none;
+	transition: border-color .3s;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+	.button-text {
+	letter-spacing: .2px;
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.primary-button:hover {
+	border-color: var(--clr-white-a25);
+}
+
+.article-title{
+	margin: 0 0 3.2rem 0;
+	line-height: 1.5;
+}
+
+article p{
+	margin: 0 0 1.6rem 0;
+}
+
+article a{
+	text-decoration: underline;
+}
+
+.company-details {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+}
+
+.company-links{
+	display: flex;
+	gap: 0.8rem;
+}
+
+.company-links .primary-button{
+	min-width: 8.8rem;
+	height: 3.2rem;
+}
+
+.page-container {
+	max-width: 360px;
+	padding: 5rem 1rem 2rem 1rem;
+}
+
+section{
+	margin: 0 0 6.4rem 0;
+}
+
+
+.card {
+	padding: 2rem;
+	position: relative;
+	background-color: var(--clr-bg);
+	border-style: solid;
+	border-color: var(--clr-white-a08);
+	border-width: 0.1rem;
+	border-radius: 2rem;	font-size: 1.6rem;
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	font-weight: 400;
+	color: var(--clr-secondary-txt);
+}
+
+
+.card:hover{
+	background-color: var(--clr-surface-hover);
+}
+
+
+/* GRID HOMEPAGE */
+.grid-projects{
+	display: grid;
+	gap: 2rem;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	grid-template-areas:
+		'learn'
+		'sybel'
+		'frak'
+		'kinov'
+		'next';
+	margin-inline: auto;
+}
+
+/* Learn Card */
+.card-learn{
+	grid-area: learn;
+	justify-content: center;
+}
+
+.card-learn h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Sybel Card*/
+.card-sybel{
+	grid-area: sybel;
+}
+
+/* Frak Card*/
+.card-frak{
+	grid-area: frak;
+}
+
+.frak-mockup{
+	position: absolute;
+	bottom: -60px;
+	transform: scale(0.8);
+}
+
+/* Kinov Card*/
+.card-kinov{
+	grid-area: kinov;
+}
+
+.kinov-mockup {
+	position: absolute;
+	bottom: 25px;
+	 right: -92px;
+}
+
+
+/* Next Card*/
+.card-next{
+	grid-area: next;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.card-next h2{
+	width: 22rem;
+}
+
+/* GRIDS PROJECT PAGES */
+.grid-photo-gallery{
+	display: grid;
+	gap: 1rem;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	grid-template-areas:
+		'pic_1 pic_2'
+		'pic_3 pic_2';
+	margin-inline: auto;
+}
+
+.grid-photo-gallery .card-tall{
+		aspect-ratio: unset;
+		width: 1fr;
+		height: 2fr;
+}
+
+
+/* Pictures List */
+.card-picture{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-picture:nth-child(1){
+	grid-area: pic_1;
+}
+
+.card-picture:nth-child(2){
+	grid-area: pic_2;
+}
+
+.card-picture:nth-child(3){
+	grid-area: pic_3;
+}
+
+
+/*  Pictures */
+.sybel-pic-1, .frak-pic-1{
+	width: 15rem;
+}
+
+.kinov-pic-1{
+	width: 24rem;
+}
+
+.sybel-pic-2, .frak-pic-2{
+	height: 20rem;
+}
+
+
+footer {
+	max-width: 360px;
+	margin-bottom: 2rem;
+}
+
+.links-container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 0 1rem 0 1rem;
+}
+
+.site-links,
+.external-links {
+	width: 300px;
+	text-align: left;
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+
+.external-links li {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	gap: 1.6rem;
+}
+
+.external-links a {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+.external-links img {
+	margin-right: 0.5rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 640px) {
+	.page-container {
+		max-width: 640px;
+	}
+
+	.grid-projects{
+		grid-template-areas:
+			'learn sybel'
+			'frak sybel'
+			'frak kinov'
+			'next kinov';
+	}
+
+	.card-small{
+		aspect-ratio: unset;
+		height: 200px;
+	}
+
+	.card-tall{
+		aspect-ratio: unset;
+		width: 1fr;
+		height: 2fr;
+	}
+
+	.card-learn{
+		position: relative;
+	}
+
+	.frak-mockup{
+		bottom: -28px;
+		transform: scale(1);
+	}
+
+	.kinov-mockup{
+		position: absolute;
+		bottom: 70px;
+		right: -96px;
+	}
+
+	.company-details {
+		flex-direction: row;
+	}
+
+	.company-links{
+		display: flex;
+		gap: 2rem;
+	}
+
+	.sybel-pic-1, .frak-pic-1{
+		width: 24rem;
+	}
+	
+	.sybel-pic-2, .frak-pic-2{
+		height: 30rem;
+	}
+
+	footer {
+		max-width: 640px;
+	}
+
+	.links-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.external-links {
+		padding-left: 2.4rem;
+	}
+}
+

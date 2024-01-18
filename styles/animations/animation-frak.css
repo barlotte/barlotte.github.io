@@ -1,0 +1,152 @@
+.frak-mockup {
+	height: 360px;
+	width: 224px;
+	border-radius: 20px;
+	background: #001432;
+	font-family: Inter, sans-serif;
+	line-height: 1.5;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.frak-mockup .frak-top-bar {
+	padding: 16px;
+	background: #12244b;
+	font-size: 10px;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.frak-wallet {
+	font-size: 12px;
+}
+
+.frak-mockup .frak-content {
+	margin-top: 16px;
+	padding-right: 16px;
+	padding-left: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.frak-content .frak-balance {
+	font-size: 24px;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	gap: 4px;
+}
+
+.frak-actions-container {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+}
+
+.frak-action {
+	padding: 8px;
+	width: 96px;
+	background: #12244b;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+}
+
+.frak-action em {
+	font-style: normal;
+	color: #00baf1;
+}
+
+.frak-action .frak-button {
+	padding: 8px;
+	min-width: 30px;
+	width: fit-content;
+	background: #00baf1;
+	border-radius: 4px;
+	color: white;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.frak-currently-playing {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.frak-playing-card {
+	padding: 8px;
+	border: solid #12244b 2px;
+	border-radius: 4px;
+}
+
+.frak-playing-card .frak-content-details {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.frak-content-details .frak-content-titles {
+	display: flex;
+	flex-direction: column;
+	font-size: 10.5px;
+	font-weight: 200;
+}
+
+.frak-playing-card .channel-name {
+	color: #818c9c;
+}
+
+.frak-playing-card .earnings {
+	font-size: 14px;
+	color: #818c9c;
+}
+
+.frak-bottom-bar {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 48px;
+	background: #12244b;
+	display: flex;
+	align-items: center;
+}
+
+.frak-bottom-bar .icon-line {
+	height: 2px;
+	width: 24px;
+	background: #00baf1;
+}
+
+.frak-bottom-bar .icons {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.frak-bottom-bar .icon {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.frak-bottom-bar .icon-inactive .icon-line{
+	background: #12244b;
+}

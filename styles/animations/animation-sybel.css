@@ -1,0 +1,100 @@
+.player-animation {
+	position: absolute;
+	top: 30%;
+	width: 266px;
+	padding: 8px;
+	font-family: 'Inter', 'sans-serif';
+	border-radius: 16px;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(2.5px);
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.player-animation .content-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.player-animation .content-details {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.player-animation .cover {
+	background: #000000;
+	border-radius: 6px;
+	width: 50px;
+	height: 50px;
+}
+
+.player-animation .titles{
+	width: 156px;
+	display: flex;
+	flex-direction: column;
+}
+
+.player-animation .episode-title {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.6;
+	font-weight: 500;
+}
+
+.player-animation .content-title {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.6;
+	font-weight: 400;
+	color: hsla(0, 0%, 100%, 0.4);
+}
+
+.player-animation .progress-container {
+	display: flex;
+	align-items: baseline;
+	gap: 4px;
+}
+
+.player-animation .progress-bar {
+	width: 218px;
+	height: 6px;
+	border-radius: 8px;
+	background: #000000;
+	overflow: hidden;
+	position: relative;
+}
+
+.player-animation .progress {
+	background: #6F6F6F;
+	height: 100%;
+	width: 20%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.player-animation .timers {
+	display: flex;
+	justify-content: space-between;
+}
+
+.player-animation .timer,
+.player-animation .end-time {
+	color: #ffffff;
+	font-size: 10px;
+}
+
+.player-animation .player-actions-container {
+	display: flex;
+	justify-content:center;
+	gap:20px;
+	
+}
+
+.player-actions-container .hidden{
+	display:none;
+}

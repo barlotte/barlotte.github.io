@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/animations/animation-sybel.css">
+	<link rel="stylesheet" href="styles/animations/animation-frak.css">
+	<link rel="stylesheet" href="styles/animations/animation-kinov.css">
+	<link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+	<title>Charlotte Bar - Product Manager</title>
+</head>
+
+<body>
+	<main>
+		<div class="page-container home">
+			<section class="home-about">
+				<h1>Hi</h1>
+				<p>I’m Charlotte Bar, a versatile Product Manager based in Paris, France. I am passionnate about consumer products and mobile experiences. I am also a language nerd and love learning new languages and other cultures.</p>
+			</section>
+			<section class="home-current">
+				<h2>Current projects</h2>
+				<p> Recently I started learning programming to enhance my tech skills. I am now open to work and looking for a Senior Product Manager or First Product Manager role.</p>
+			</section>
+			<section class="home-projects" id="projects">
+				<h2>Last projects</h2>
+				<div class="grid-projects">
+					<a href="pages/learn.html" class="card card-small card-learn">
+						<h1>Learn<br />to<br />code.</h1>
+						<div id="particles-js"></div>
+					</a>
+					<a href="pages/sybel.html" class="card card-tall card-sybel">
+						<h1>Sybel</h1>
+						<div class="player-animation">
+							<div class="content-container">
+								<div class="content-details">
+									<img class="cover" src="src/images/animations/sybel-animation-cover.png" alt="Player Sybel">
+									<div class="titles">
+										<span class="episode-title">S1:E1 Captain 99%</span>
+										<span class="content-title">La disparition de Stephanie Mailer</span>
+									</div>
+								</div>
+								<div class="sound-wave-animation">
+									<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+									<lottie-player id="soundwave-player" src="https://lottie.host/4cd03d23-aea2-4e8b-bc67-2ffa419db5e1/8gq4Tmk0i5.json" speed="1" style="width: 20px; height: 20px;" loop></lottie-player>
+								</div>
+							</div>
+							<div class="progress-container">
+								<span class="timer"></span>
+								<div class="progress-bar">
+									<div class="progress"></div>
+								</div>
+								<span class="end-time">3:30</span>
+							</div>
+							<div class="player-actions-container">
+									<div class="backward-15s-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M12.4837 24.1519C6.5092 24.1519 1.52588 19.1821 1.52588 13.194C1.52588 9.6636 3.26392 6.47266 5.9253 4.44946C6.46846 4.04209 7.14738 4.16431 7.4461 4.6667C7.7584 5.16912 7.59546 5.75299 7.10664 6.1196C4.97482 7.73545 3.61698 10.2882 3.60338 13.194C3.58981 18.1366 7.55472 22.0879 12.4837 22.0879C17.4263 22.0879 21.3641 18.1366 21.3641 13.194C21.3641 8.98468 18.5126 5.49499 14.602 4.55808V5.9295C14.602 6.78495 14.0181 7.00222 13.3799 6.54054L9.94455 4.12357C9.40139 3.74337 9.41499 3.17307 9.94455 2.80646L13.3935 0.389492C14.0181 -0.0721895 14.602 0.14508 14.602 0.986935V2.43983C19.5989 3.44465 23.4552 7.92556 23.4552 13.194C23.4552 19.1821 18.4718 24.1519 12.4837 24.1519Z" fill="white" />
+										<path d="M10.4605 16.7109C10.4605 17.2268 10.1482 17.5934 9.63224 17.5934C9.10268 17.5934 8.79039 17.2268 8.79039 16.7109V10.9671H8.76322L7.82632 11.6732C7.69053 11.7819 7.5819 11.8362 7.41894 11.8362C7.07948 11.8362 6.83507 11.5646 6.83507 11.2251C6.83507 10.94 6.97086 10.7499 7.2017 10.5734L8.28797 9.75866C8.66817 9.47351 9.00763 9.25624 9.49645 9.25624C10.0804 9.25624 10.4605 9.6093 10.4605 10.2067V16.7109Z" fill="white" />
+										<path d="M17.6707 14.7555C17.6707 16.4393 16.6387 17.6613 14.9686 17.6613C13.9502 17.6613 12.7281 17.0775 12.4702 16.0727C12.443 15.9504 12.4158 15.8147 12.4158 15.6789C12.4158 15.258 12.6738 14.9999 13.0948 14.9999C13.4071 14.9999 13.6379 15.1629 13.8009 15.4888C14.0045 15.9776 14.3847 16.3442 14.955 16.3442C15.6747 16.3442 16.082 15.6517 16.082 14.7963C16.082 14.0223 15.729 13.3162 14.9686 13.3162C14.5884 13.3162 14.2761 13.5063 14.0453 13.8051C13.8009 14.0902 13.6515 14.2124 13.2849 14.2124C12.7553 14.2124 12.4837 13.8186 12.5245 13.3026L12.7146 10.329C12.7553 9.71792 13.0405 9.39203 13.6515 9.39203H16.6795C17.0869 9.39203 17.3313 9.65004 17.3313 10.0574C17.3313 10.4512 17.0733 10.7227 16.6795 10.7227H14.086L13.9231 12.9632H13.9774C14.2489 12.4336 14.8056 12.1213 15.5117 12.1213C16.8968 12.1213 17.6707 13.3434 17.6707 14.7555Z" fill="white" />
+									</svg>
+									</div>
+										<svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M5.27368 21.0192C5.74893 21.0192 6.14271 20.8427 6.60436 20.5711L18.825 13.5374C19.8162 12.9535 20.1421 12.5869 20.1421 11.9759C20.1421 11.3649 19.8162 10.9982 18.825 10.4144L6.60436 3.3807C6.14271 3.10915 5.74893 2.93262 5.27368 2.93262C4.41823 2.93262 3.88867 3.59797 3.88867 4.60276V19.349C3.88867 20.3538 4.41823 21.0192 5.27368 21.0192Z" fill="white" />
+									</svg>
+									<svg class="pause-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M7.00908 20.7679H9.46679C10.4444 20.7679 10.974 20.2384 10.974 19.2472V4.71814C10.974 3.68619 10.4444 3.21094 9.46679 3.21094H7.00908C6.01784 3.21094 5.48828 3.7405 5.48828 4.71814V19.2472C5.48828 20.2384 6.01784 20.7679 7.00908 20.7679ZM14.9525 20.7679H17.4102C18.3878 20.7679 18.9174 20.2384 18.9174 19.2472V4.71814C18.9174 3.68619 18.3878 3.21094 17.4102 3.21094H14.9525C13.9613 3.21094 13.4317 3.7405 13.4317 4.71814V19.2472C13.4317 20.2384 13.9613 20.7679 14.9525 20.7679Z" fill="white" />
+									</svg>
+									<div class="forward-30s-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M12.8568 24.1475C6.88224 24.1475 1.89893 19.1778 1.89893 13.1897C1.89893 7.9212 5.74164 3.44029 10.7521 2.43548V0.996152C10.7521 0.140726 11.3224 -0.0765436 11.9742 0.398708L15.4095 2.81568C15.9527 3.19588 15.9391 3.76618 15.4095 4.13278L11.9606 6.54976C11.3224 6.99787 10.7521 6.7806 10.7521 5.93874V4.55373C6.84151 5.49063 3.99002 8.98033 3.99002 13.1897C3.99002 18.1322 7.92777 22.0836 12.8568 22.0836C17.7994 22.0836 21.7643 18.1322 21.7507 13.1897C21.7371 10.2839 20.3793 7.7311 18.2474 6.11524C17.7586 5.74864 17.5957 5.16477 17.908 4.66235C18.2067 4.15996 18.8856 4.03773 19.4152 4.44511C22.0766 6.4683 23.8282 9.65925 23.8282 13.1897C23.8282 19.1778 18.8449 24.1475 12.8568 24.1475Z" fill="white" />
+										<path d="M12.3 15.24C12.3 16.7608 11.0237 17.657 9.43497 17.657C8.29439 17.657 7.01799 17.1138 6.77358 16.0276C6.74644 15.9054 6.73287 15.7832 6.73287 15.6609C6.73287 15.2264 7.01799 14.9549 7.4661 14.9549C7.7784 14.9549 8.04998 15.1449 8.19934 15.4573C8.40301 15.9868 8.75604 16.3263 9.44856 16.3263C10.1546 16.3263 10.6299 15.851 10.6299 15.1585C10.6299 14.2759 10.046 13.9365 9.25846 13.9365H9.00045C8.60668 13.9365 8.36227 13.7328 8.36227 13.339C8.36227 12.9724 8.59311 12.7416 9.00045 12.7416H9.24489C9.96453 12.7416 10.4534 12.3071 10.4534 11.5874C10.4534 10.9356 10.0732 10.5147 9.42139 10.5147C8.89183 10.5147 8.52523 10.7727 8.30796 11.3701C8.17217 11.7368 7.95493 11.8861 7.56116 11.8861C7.05873 11.8861 6.86863 11.5738 6.86863 11.2208C6.86863 11.0986 6.88223 10.9764 6.90937 10.8542C7.12664 9.89009 8.19934 9.21117 9.40782 9.21117C10.8471 9.21117 12.0285 9.97154 12.0285 11.3837C12.0285 12.2663 11.4853 13.0539 10.5348 13.2711V13.2983C11.4853 13.3933 12.3 14.0044 12.3 15.24Z" fill="white" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1843 13.4069C19.1843 15.5523 18.424 17.657 16.3057 17.657C14.201 17.657 13.4406 15.5523 13.4406 13.4069C13.4406 11.2887 14.1875 9.184 16.3057 9.184C18.424 9.184 19.1843 11.2887 19.1843 13.4069ZM15.1244 13.4069C15.1244 15.1721 15.5725 16.3263 16.3057 16.3263C17.0525 16.3263 17.5006 15.1721 17.5006 13.4069C17.5006 11.6689 17.0525 10.5283 16.3057 10.5283C15.5725 10.5283 15.1244 11.6689 15.1244 13.4069Z" fill="white" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="pages/frak.html" class="card card-tall card-frak">
+						<h1>Frak</h1>
+						<div class="frak-mockup">
+							<div class="frak-container">
+								<div class="frak-top-bar">
+									<svg class="frak-isactive-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+										<path d="M4.04682 8.02366C6.24057 8.01061 8.03673 6.19408 8.02367 3.99992C8.01061 1.80577 6.19151 0.0107557 3.99776 0.0238128C1.80172 0.0368836 0.0107479 1.85338 0.0238074 4.04754C0.036867 6.24169 1.85079 8.03673 4.04682 8.02366Z" fill="#FF0000" />
+									</svg>
+									<span class="frak-wallet">u7HijSa9...</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+										<path d="M7.51911 14.9549L8.9003 14.9467C9.29144 14.9444 9.55284 14.7275 9.64407 14.3189L9.97736 12.8567C10.1825 12.7762 10.3956 12.6996 10.5946 12.6116L11.8815 13.4085C12.2216 13.6246 12.5648 13.5892 12.8376 13.313L13.7976 12.3417C14.0769 12.059 14.1107 11.7168 13.8854 11.364L13.0758 10.102C13.1615 9.89552 13.2381 9.688 13.3111 9.47908L14.7807 9.12583C15.1857 9.03227 15.3969 8.76833 15.3945 8.37467L15.3864 7.00747C15.3841 6.61885 15.1697 6.35744 14.7637 6.26871L13.295 5.93043C13.2144 5.70986 13.1328 5.50579 13.0523 5.30782L13.8468 4.0288C14.0654 3.67976 14.0325 3.33903 13.7473 3.05725L12.7709 2.09737C12.4923 1.82952 12.1612 1.79309 11.8212 2.00829L10.5363 2.82551C10.3388 2.73985 10.1248 2.66575 9.91624 2.5877L9.56553 1.12206C9.46943 0.714607 9.20548 0.500859 8.81434 0.503187L7.43314 0.511408C7.042 0.513736 6.78061 0.730611 6.69191 1.13916L6.35612 2.60385C6.14056 2.68445 5.93538 2.76102 5.73246 2.85158L4.44047 2.05222C4.09543 1.8411 3.7648 1.87895 3.48939 2.15261L2.52447 3.12405C2.24266 3.40921 2.21382 3.7503 2.43659 4.09671L3.24618 5.36618C3.16807 5.5651 3.0889 5.77012 3.01342 5.99163L1.55534 6.34732C1.14789 6.4409 0.936656 6.70484 0.938969 7.09347L0.947107 8.46066C0.94945 8.85432 1.16381 9.11573 1.57235 9.20445L3.03958 9.54022C3.11258 9.74827 3.19168 9.95486 3.27975 10.1603L2.48526 11.4318C2.26418 11.7873 2.3021 12.1291 2.58474 12.4084L3.55615 13.3683C3.83229 13.6412 4.1759 13.6725 4.51587 13.4523L5.79323 12.6401C5.99721 12.7258 6.20077 12.7999 6.41727 12.8779L6.77045 14.336C6.86401 14.7435 7.12797 14.9572 7.51911 14.9549ZM8.18631 10.2671C6.79042 10.2754 5.63488 9.12858 5.62659 7.73519C5.61839 6.35722 6.76665 5.19918 8.1561 5.19091C9.54949 5.18262 10.705 6.32695 10.7132 7.70491C10.7215 9.09831 9.57971 10.2588 8.18631 10.2671Z" fill="#818C9C" />
+									</svg>
+								</div>
+								<div class="frak-content">
+									<div class="frak-balance">
+										<span class="balance-total">803.88</span>
+										<span class="currency">$</span>
+									</div>
+									<div class="frak-actions-container">
+										<div class="frak-action">
+											<span>Left to claim <br><em>$500FRK</em> </span>
+											<div class="frak-button">Claim</div>
+										</div>
+										<div class="frak-action">
+											<span> Add funds to <br>your wallet </span>
+											<div class="frak-button">Buy</div>
+										</div>
+									</div>
+									<div class="frak-currently-playing">
+										<span>Currently playing</span>
+										<div class="frak-playing-card">
+											<div class="frak-content-details">
+												<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+													<rect width="51" height="51" rx="3" fill="white" />
+													<path d="M40.4868 17.9392C40.1022 16.6521 38.9859 15.6433 37.5737 15.307C35.0146 14.696 24.7672 14.757 24.7672 14.757C24.7672 14.757 14.5199 14.818 11.9682 15.4595C10.5601 15.8125 9.45556 16.8345 9.08661 18.1261C8.41585 20.4672 8.44488 25.3433 8.44488 25.3433C8.44488 25.3433 8.4739 30.2192 9.17248 32.5524C9.55677 33.8397 10.6734 34.8482 12.0854 35.1848C14.6446 35.7957 24.8919 35.7347 24.8919 35.7347C24.8919 35.7347 35.1394 35.6737 37.691 35.0324C39.099 34.6792 40.2033 33.6573 40.5725 32.3657C41.2434 30.0243 41.2144 25.1484 41.2144 25.1484C41.2144 25.1484 41.1854 20.2723 40.4867 17.9393" fill="#FF0000" />
+													<path d="M21.5241 29.6824L30.0625 25.2045L21.4714 20.8281L21.5241 29.6824Z" fill="white" />
+												</svg>
+												<div class="frak-content-titles">
+													<span class="content-name">Content name</span>
+													<span class="channel-name">Channel name</span>
+													<div class="earnings"><span class="earning-sign">+</span><span class="total-earned">21.93</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="frak-bottom-bar">
+									<div class="icons">
+										<div class="icon">
+											<div class="icon-line"></div>
+											<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+												<path d="M2.26437 17.2858L14.769 17.2114C16.2228 17.2027 16.9481 16.3779 16.9386 14.7844L16.8803 4.98949C16.8708 3.39599 16.1357 2.57982 14.682 2.58848L2.17733 2.6629C0.729916 2.67152 -0.00174585 3.49007 0.00777647 5.08992L0.0660758 14.8848C0.075598 16.4846 0.816952 17.2944 2.26437 17.2858Z" fill="white"/>
+												<path d="M9.98264 13.3081L16.8561 13.2672C17.6552 13.2624 18.0543 12.8806 18.0499 12.1436L18.023 7.61381C18.0186 6.87687 17.615 6.4998 16.8159 6.50456L9.94239 6.54547C9.14678 6.5502 8.74418 6.92914 8.74859 7.66902L8.77555 12.1988C8.77995 12.9387 9.18703 13.3128 9.98264 13.3081Z" fill="white"/>
+												<path d="M9.98264 13.3081L16.8561 13.2672C17.6552 13.2624 18.0543 12.8806 18.0499 12.1436L18.023 7.61381C18.0186 6.87687 17.615 6.4998 16.8159 6.50456L9.94239 6.54547C9.14678 6.5502 8.74418 6.92914 8.74859 7.66902L8.77555 12.1988C8.77995 12.9387 9.18703 13.3128 9.98264 13.3081ZM9.98958 12.7794C9.56902 12.7819 9.33777 12.5741 9.33537 12.1697L9.30871 7.69144C9.30629 7.28386 9.53506 7.07651 9.95562 7.074L16.809 7.03321C17.2233 7.03074 17.4607 7.23533 17.4632 7.64291L17.4898 12.1212C17.4922 12.5255 17.2572 12.7362 16.8429 12.7386L9.98958 12.7794Z" fill="#12244B"/>
+												<path d="M12.7403 10.95C13.3183 10.9466 13.7945 10.4657 13.791 9.88763C13.7876 9.30959 13.3048 8.8344 12.7268 8.83784C12.1493 8.84127 11.6745 9.32217 11.6779 9.90021C11.6814 10.4783 12.1628 10.9535 12.7403 10.95Z" fill="#12244B"/>
+												</svg>
+										</div>
+										<div class="icon icon-inactive">
+											<div class="icon-line"></div>
+											<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+												<path d="M3.86053 9.79977C3.862 10.0467 4.05242 10.2364 4.32942 10.2348L8.55402 10.2097L6.35241 16.28C6.10211 16.9718 6.80824 17.3268 7.25679 16.7658L13.9381 8.30155C14.0495 8.14994 14.1158 8.02055 14.1149 7.86305C14.1134 7.61614 13.9266 7.42633 13.646 7.428L9.41849 7.45317L11.623 1.3828C11.8769 0.691036 11.1642 0.336045 10.7157 0.897016L4.03733 9.36127C3.92594 9.51286 3.85959 9.64227 3.86053 9.79977Z" fill="#818C9C"/>
+											  </svg>
+										</div>
+										<div class="icon icon-inactive">
+											<div class="icon-line"></div>
+											<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M16.2966 17.0101L3.38347 17.087C1.88877 17.0959 1.1232 16.2596 1.11337 14.6076L1.05317 4.49274C1.04333 2.84064 1.7989 1.99535 3.29359 1.98645L16.2067 1.9096C17.7079 1.90066 18.467 2.74348 18.4768 4.38904L18.537 14.5039C18.5468 16.1494 17.7978 17.0012 16.2966 17.0101ZM12.3428 9.46782C12.233 9.46847 12.1445 9.55801 12.1451 9.6678L12.1462 9.85099C12.1469 9.96078 12.2364 10.0493 12.3462 10.0486L15.4333 10.0302C15.5431 10.0296 15.6316 9.94004 15.631 9.83025L15.6299 9.64706C15.6292 9.53727 15.5397 9.44879 15.4299 9.44944L12.3428 9.46782ZM10.9665 8.51865C10.9658 8.40885 11.0543 8.31932 11.1641 8.31866L16.5744 8.28646C16.6842 8.28581 16.7737 8.37428 16.7744 8.48408L16.7755 8.66727C16.7761 8.77706 16.6876 8.8666 16.5778 8.86725L11.1676 8.89945C11.0578 8.90011 10.9682 8.81163 10.9676 8.70183L10.9665 8.51865ZM3.76722 6.06818C3.21856 6.07145 2.77643 6.51887 2.77969 7.06753L2.80935 12.0501C2.81262 12.5988 3.26004 13.0409 3.8087 13.0377L8.79127 13.008C9.33993 13.0047 9.78206 12.5573 9.77879 12.0087L9.74914 7.02605C9.74587 6.47739 9.29845 6.03526 8.74979 6.03852L3.76722 6.06818Z" fill="#818C9C"/>
+											  </svg>
+										</div>
+										<div class="icon icon-inactive">
+											<div class="icon-line"></div>
+											<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+												<path d="M16.9576 15.2101L16.2039 4.86886C16.1317 3.87968 15.2683 3.11452 14.2311 3.12069L4.12479 3.18085C3.09313 3.18699 2.24128 3.95437 2.17376 4.93865L1.46377 15.2886C1.38906 16.3771 2.296 17.2973 3.43718 17.2905L15.007 17.2216C16.1424 17.2148 17.0364 16.2928 16.9575 15.2101L16.9576 15.2101ZM9.1707 8.58892C7.2436 8.60039 5.65781 7.17898 5.51771 5.36884L6.69667 5.36183C6.8298 6.55087 7.88624 7.47324 9.16401 7.46564C10.4418 7.45803 11.4872 6.52314 11.6061 5.33261L12.7851 5.32559C12.6666 7.13726 11.0978 8.57745 9.1707 8.58892Z" fill="#818C9C"/>
+												<path d="M6.69603 3.15925C6.81537 2.03054 7.86105 1.14391 9.13882 1.1363C10.4166 1.1287 11.4727 2.00282 11.6055 3.13003L12.7845 3.12301C12.6449 1.40698 11.0596 0.0599192 9.13248 0.0713895C7.20538 0.0828597 5.63617 1.4487 5.51707 3.16627L6.69603 3.15925Z" fill="#818C9C"/>
+												</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="pages/kinov.html" class="card card-tall card-kinov">
+						<h1>Kinov</h1>
+						<div class="kinov-mockup">
+							<div class="kinov-top">
+								<div class="kinov-browser-top">
+									<svg class="kinov-isactive-icon" xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 9 9" fill="none">
+										<path d="M4.04682 8.02366C6.24057 8.01061 8.03673 6.19408 8.02367 3.99992C8.01061 1.80577 6.19151 0.0107557 3.99776 0.0238128C1.80172 0.0368836 0.0107479 1.85338 0.0238074 4.04754C0.036867 6.24169 1.85079 8.03673 4.04682 8.02366Z" fill="#ED6A5E" />
+									</svg>
+									<svg class="kinov-isactive-icon" xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 9 9" fill="none">
+										<path d="M4.04682 8.02366C6.24057 8.01061 8.03673 6.19408 8.02367 3.99992C8.01061 1.80577 6.19151 0.0107557 3.99776 0.0238128C1.80172 0.0368836 0.0107479 1.85338 0.0238074 4.04754C0.036867 6.24169 1.85079 8.03673 4.04682 8.02366Z" fill="#F4BF4F" />
+									</svg>
+									<svg class="kinov-isactive-icon" xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 9 9" fill="none">
+										<path d="M4.04682 8.02366C6.24057 8.01061 8.03673 6.19408 8.02367 3.99992C8.01061 1.80577 6.19151 0.0107557 3.99776 0.0238128C1.80172 0.0368836 0.0107479 1.85338 0.0238074 4.04754C0.036867 6.24169 1.85079 8.03673 4.04682 8.02366Z" fill="#61C554" />
+									</svg>
+								</div>
+								<div class="kinov-title">
+									<svg xmlns="http://www.w3.org/2000/svg" width="9" height="11" viewBox="0 0 10 12" fill="none">
+										<g clip-path="url(#clip0_602_6173)">
+											<path d="M-0.000244141 2.16937C-0.000244141 4.24096 0.987899 5.53008 2.97422 6.14199C3.23505 6.47308 3.53099 6.73387 3.81189 6.91947V9.07635H3.18991C2.48266 9.07635 2.11649 9.48263 2.11649 10.1498V11.1279C2.11649 11.3536 2.29205 11.5091 2.50272 11.5091H7.30801C7.51868 11.5091 7.69426 11.3536 7.69426 11.1279V10.1498C7.69426 9.48263 7.32307 9.07635 6.6158 9.07635H5.99884V6.92452C6.27975 6.73892 6.5807 6.47308 6.84154 6.14199C8.82284 5.52503 9.81099 4.24096 9.81099 2.16937C9.81099 1.65272 9.48997 1.33672 8.95326 1.33672H7.98014C7.89989 0.825089 7.53876 0.514099 6.93181 0.514099H2.87892C2.277 0.514099 1.91084 0.820073 1.83058 1.33672H0.857487C0.320778 1.33672 -0.000244141 1.65272 -0.000244141 2.16937ZM0.717038 2.23959C0.717038 2.15934 0.777232 2.09413 0.862499 2.09413H1.8055V3.07726C1.8055 3.8447 2.00614 4.55697 2.31713 5.16891C1.26879 4.64224 0.717038 3.66914 0.717038 2.23959ZM2.56291 3.21771V1.58751C2.56291 1.40193 2.69333 1.27151 2.87892 1.27151H6.93181C7.1174 1.27151 7.24783 1.40193 7.24783 1.58751V3.21771C7.24783 5.00339 5.60257 6.6035 4.90535 6.6035C4.20815 6.6035 2.56291 5.00339 2.56291 3.21771ZM2.8739 10.7517V10.1498C2.8739 9.95916 2.9993 9.83374 3.18991 9.83374H6.6158C6.81145 9.83374 6.93682 9.95916 6.93682 10.1498V10.7517H2.8739ZM4.56931 9.07635V7.30572C4.68967 7.34082 4.80001 7.35588 4.90535 7.35588C5.01069 7.35588 5.12104 7.34082 5.24144 7.30572V9.07635H4.56931ZM7.4936 5.16891C7.80461 4.55697 8.00522 3.8447 8.00522 3.07726V2.09413H8.94821C9.03352 2.09413 9.0937 2.15934 9.0937 2.23959C9.0937 3.66914 8.54193 4.64224 7.4936 5.16891Z" fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_602_6173">
+												<rect width="9.81124" height="11" fill="white" transform="translate(0 0.513794)" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>Startup Challenges</span>
+								</div>
+								<div class="kinov-nav">
+									<span>Challenge overview</span>
+									<span class="inactive-tab">Evaluations</span>
+									<span class="inactive-tab">Challenge settings</span>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="kinov-container">
+								<div class="kinov-kanban">
+									<div class="step-column" id="applications">
+										<span class="step-title">Application Completed</span>
+										<div class="step-content">
+											<div class="kinov-su-card">
+												<img class="su-cover" src="src/images/animations/kinov-animation-phenix.png" alt="Phenix Logo"/>
+												<div class="su-details">
+													<span class="su-title">Phenix</span>
+													<div class="su-text-zone-1"></div>
+													<div class="su-text-zone-2"></div>
+												</div>
+											</div>
+											<div class="kinov-su-card active-card">
+												<img class="su-cover" src="src/images/animations/kinov-animation-mangopay.png" alt="Mangopay Logo"/>
+												<div class="su-details">
+													<span class="su-title">MangoPay</span>
+													<div class="su-text-zone-1"></div>
+													<div class="su-text-zone-2"></div>
+												</div>
+											</div>
+											<div class="kinov-su-card">
+												<img class="su-cover" src="src/images/animations/kinov-animation-yuka.png" alt="Yuka Logo"/>
+												<div class="su-details">
+													<span class="su-title">Yuka</span>
+													<div class="su-text-zone-1"></div>
+													<div class="su-text-zone-2"></div>
+												</div>
+											</div>
+											<div class="kinov-su-card">
+												<img class="su-cover" src="src/images/animations/kinov-animation-findnorder.png" alt="Find & Order Logo"/>
+												<div class="su-details">
+													<span class="su-title">Find & Order</span>
+													<div class="su-text-zone-1"></div>
+													<div class="su-text-zone-2"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="step-column" id="evaluations">
+										<span class="step-title">Evaluations in progress</span>
+										<div class="step-content">
+											<div class="kinov-su-card">
+												<img class="su-cover" src="src/images/animations/kinov-animation-meero.png" alt="Meero Logo"/>
+												<div class="su-details">
+													<span class="su-title">Meero</span>
+													<div class="su-text-zone-1"></div>
+													<div class="su-text-zone-2"></div>
+												</div>
+											</div>
+											<div class="kinov-su-card">
+												<img class="su-cover" src="src/images/animations/kinov-animation-tokywoky.png" alt="TokyWoky Logo"/>
+												<div class="su-details">
+													<span class="su-title">TokyWoky</span>
+													<div class="su-text-zone-1"></div>
+													<div class="su-text-zone-2"></div>
+												</div>
+											</div>
+											<div class="drop-zone"></div>
+										</div>
+									</div>
+									<div class="step-column" id="pitch-selection">
+										<span class="step-title">Selected for pitch</span>
+										<div class="step-content">
+											<div class="kinov-su-card">
+												<img class="su-cover" src="src/images/animations/kinov-animation-transaction-connect.png" alt="Transaction Connect Logo"/>
+												<div class="su-details">
+													<span class="su-title">Transaction Connect</span>
+													<div class="su-text-zone-1"></div>
+													<div class="su-text-zone-2"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="step-column" id="final-selection">
+										<span class="step-title">Final selection</span>
+										<div class="step-content">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<div class="card card-small card-next">
+						<h2>I’m looking for a new position as Senior PM or First PM </h2>
+						<a class="primary-button" href="https://www.linkedin.com/in/charlotte-bar">
+							<span class="button-text">Let's connect</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</div>	
+	</main>
+	<footer>
+		<div class="links-container">
+		<ul class="site-links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#projects">Projects</a></li>
+		</ul>
+		<ul class="external-links">
+			<li>
+				<span> Email</span>
+				<a href="mailto:charlottebar.pm@gmail.com">charlottebar.pm@gmail.com</a>
+			</li>
+			<li>
+				<span> Resume</span>
+				<a href="https://drive.google.com/file/d/1k90-D5ofa8RkvJsj7Z8BcYnVhyC4gY7P/view?usp=sharing">download file</a>
+			</li>
+			<li>
+				<span> Github</span>
+				<a href="https://github.com/Barlotte">@barlotte</a>
+			</li>
+			<li>
+				<span> LinkedIn</span>
+				<a href="https://www.linkedin.com/in/charlotte-bar">/in/charlotte-bar/</a>
+			</li>
+
+		</ul>
+		</div>
+	</footer>
+	<script src="src/scripts/particles/particles.js"></script>
+	<script src="src/scripts/particles/animation-particles.js"></script>
+	<script src="src/scripts/animation-sybel/animation-sybel.js"></script>
+	<script src="src/scripts/animation-frak/animation-frak.js"></script>
+	<script src="src/scripts/animation-kinov/animation-kinov.js"></script>
+</body>
+</html>

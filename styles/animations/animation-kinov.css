@@ -1,0 +1,184 @@
+.kinov-mockup {
+	width: 350px;
+	height: 246px;
+	border-radius: 18px;
+	flex-direction: column;
+	font-family: Inter, sans-serif;
+	line-height: 1.2;
+	color: white;
+	background: white;
+	overflow: hidden;
+}
+
+.kinov-top {
+	display: flex;
+	flex-direction: column;
+}
+
+.kinov-browser-top,
+.kinov-title,
+.kinov-nav {
+	padding-left: 8px;
+	display: flex;
+	align-items: center;
+}
+
+.kinov-browser-top {
+	height: 20px;
+	background: #f5f5f5;
+	gap: 4px;
+}
+
+.kinov-title {
+	height: 24px;
+	background: #169fff;
+	font-size: 10px;
+	font-weight: 700;
+	white-space: nowrap;
+	gap: 4px;
+}
+
+.kinov-nav {
+	height: 20px;
+	background: #ffffff;
+	font-size: 8px;
+	font-weight: 700;
+	color: #000000;
+	white-space: nowrap;
+	gap: 8px;
+}
+
+.kinov-nav .inactive-tab {
+	font-weight: 400;
+	color: #b6b6b6;
+}
+
+.kinov-top .divider {
+	width: 100%;
+	height: 1px;
+	background-color: #b6b6b6;
+}
+
+
+.kinov-search {
+	width: fit-content;
+	padding: 2px 4px;
+	border-radius: 4px;
+	border: 1px solid #b6b6b6;
+	font-size: 8px;
+	color: #b6b6b6;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	overflow: hidden;
+}
+
+.kinov-export-button {
+	padding: 2px 4px;
+	border-radius: 4px;
+	background: #4dc68e;
+	font-size: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+}
+
+.kinov-container {
+	position:relative;
+	padding-top: 10px;
+	padding-left: 8px;
+	overflow: hidden;
+}
+
+.kinov-kanban {
+	width: 426px;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.kinov-kanban .step-column {
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+}
+
+.kinov-kanban .step-title {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background: #169fff;
+	border-radius: 4px 4px 0 0;
+	font-size: 8px;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.kinov-kanban .step-content {
+	padding: 8px 8px 10px 8px;
+	border-radius: 0 0 4px 4px;
+	background: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.kinov-su-card {
+	width: 98px;
+	padding: 4px;
+	background: #ffffff;
+	border-radius: 4px;
+	box-shadow: 1px 2px 9px 0 rgba(0, 0, 0, 0.2);
+	font-size: 10px;
+	font-weight: 700;
+	color: #000000;
+	display: flex;
+	gap: 4px;
+}
+
+.su-cover {
+	width: 24px;
+	height: 24px;
+}
+
+.su-details {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.su-title {
+	width: 56px;
+}
+
+.su-text-zone-1 {
+	width: 56px;
+	height: 4px;
+	border-radius: 30px;
+	background: #dbdbdb;
+}
+
+.su-text-zone-2 {
+	width: 42px;
+	height: 4px;
+	border-radius: 46px;
+	background: #dbdbdb;
+}
+
+.active-card {
+	position: static;
+	transition: transform 0.2s ease-out;
+}
+
+.drop-zone {
+	width: 98px;
+	height: 36px;
+	border: 1px dashed #169fff;
+	background: #dfecf6;
+	border-radius: 4px;
+	display: none;
+}

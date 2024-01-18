@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Local development
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Ignore the compiled JavaScript file
+*.compiled.js
+
+# Ignore the compiled CSS file
+*.compiled.css
