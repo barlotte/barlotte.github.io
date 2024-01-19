@@ -1,16 +1,16 @@
 .player-animation {
 	position: absolute;
 	top: 30%;
-	width: 266px;
-	padding: 8px;
+	width: 26.6rem;
+	padding: 0.8rem;
 	font-family: 'Inter', 'sans-serif';
-	border-radius: 16px;
+	border-radius: 1.6rem;
 	background: rgba(0, 0, 0, 0.5);
-	box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(2.5px);
+	box-shadow: 0 0.3rem 2.4rem 0 rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(0.25rem);
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 1.6rem;
 }
 
 .player-animation .content-container {
@@ -22,32 +22,32 @@
 .player-animation .content-details {
 	display: flex;
 	align-items: center;
-	gap: 8px;
+	gap: 0.8rem;
 }
 
 .player-animation .cover {
 	background: #000000;
-	border-radius: 6px;
-	width: 50px;
-	height: 50px;
+	border-radius: 0.6rem;
+	width: 5rem;
+	height: 5rem;
 }
 
 .player-animation .titles{
-	width: 156px;
+	width: 15.6rem;
 	display: flex;
 	flex-direction: column;
 }
 
 .player-animation .episode-title {
 	margin: 0;
-	font-size: 12px;
+	font-size: 1.2rem;
 	line-height: 1.6;
 	font-weight: 500;
 }
 
 .player-animation .content-title {
 	margin: 0;
-	font-size: 12px;
+	font-size: 1.2rem;
 	line-height: 1.6;
 	font-weight: 400;
 	color: hsla(0, 0%, 100%, 0.4);
@@ -56,13 +56,13 @@
 .player-animation .progress-container {
 	display: flex;
 	align-items: baseline;
-	gap: 4px;
+	gap: 0.4rem;
 }
 
 .player-animation .progress-bar {
-	width: 218px;
-	height: 6px;
-	border-radius: 8px;
+	width: 21.8rem;
+	height: 0.6rem;
+	border-radius: 0.8rem;
 	background: #000000;
 	overflow: hidden;
 	position: relative;
@@ -85,13 +85,13 @@
 .player-animation .timer,
 .player-animation .end-time {
 	color: #ffffff;
-	font-size: 10px;
+	font-size: 1rem;
 }
 
 .player-animation .player-actions-container {
 	display: flex;
 	justify-content:center;
-	gap:20px;
+	gap: 2rem;
 	
 }
 

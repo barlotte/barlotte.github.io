@@ -1,7 +1,7 @@
 .frak-mockup {
-	height: 360px;
-	width: 224px;
-	border-radius: 20px;
+	height: 36rem;
+	width: 22.4rem;
+	border-radius: 2rem;
 	background: #001432;
 	font-family: Inter, sans-serif;
 	line-height: 1.5;
@@ -12,9 +12,9 @@
 }
 
 .frak-mockup .frak-top-bar {
-	padding: 16px;
+	padding: 1.6rem;
 	background: #12244b;
-	font-size: 10px;
+	font-size: 1rem;
 	font-weight: 300;
 	display: flex;
 	align-items: center;
@@ -22,44 +22,44 @@
 }
 
 .frak-wallet {
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 .frak-mockup .frak-content {
-	margin-top: 16px;
-	padding-right: 16px;
-	padding-left: 16px;
+	margin-top: 1.6rem;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 2rem;
 }
 
 .frak-content .frak-balance {
-	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: 500;
 	display: flex;
 	justify-content: center;
-	gap: 4px;
+	gap: 0.4rem;
 }
 
 .frak-actions-container {
 	display: flex;
 	justify-content: center;
-	gap: 16px;
+	gap: 1.6rem;
 }
 
 .frak-action {
-	padding: 8px;
-	width: 96px;
+	padding: 0.8rem;
+	width: 9.6rem;
 	background: #12244b;
-	border-radius: 4px;
+	border-radius: 0.4rem;
 	text-align: center;
-	font-size: 10px;
+	font-size: 1rem;
 	font-weight: 500;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 6px;
+	gap: 0.6rem;
 }
 
 .frak-action em {
@@ -68,13 +68,13 @@
 }
 
 .frak-action .frak-button {
-	padding: 8px;
-	min-width: 30px;
+	padding: 0.8rem;
+	min-width: 3rem;
 	width: fit-content;
 	background: #00baf1;
-	border-radius: 4px;
+	border-radius: 0.4rem;
 	color: white;
-	font-size: 11px;
+	font-size: 1.1rem;
 	font-weight: 500;
 	line-height: 1;
 }
@@ -82,27 +82,27 @@
 .frak-currently-playing {
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
-	font-size: 12px;
+	gap: 0.4rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 
 .frak-playing-card {
-	padding: 8px;
-	border: solid #12244b 2px;
-	border-radius: 4px;
+	padding: 0.8rem;
+	border: solid #12244b 0.2rem;
+	border-radius: 0.4rem;
 }
 
 .frak-playing-card .frak-content-details {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 1rem;
 }
 
 .frak-content-details .frak-content-titles {
 	display: flex;
 	flex-direction: column;
-	font-size: 10.5px;
+	font-size: 1.05rem;
 	font-weight: 200;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .frak-playing-card .earnings {
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: #818c9c;
 }
 
@@ -119,15 +119,15 @@
 	position: absolute;
 	width: 100%;
 	bottom: 0;
-	height: 48px;
+	height: 4.8rem;
 	background: #12244b;
 	display: flex;
 	align-items: center;
 }
 
 .frak-bottom-bar .icon-line {
-	height: 2px;
-	width: 24px;
+	height: 0.2rem;
+	width: 2.4rem;
 	background: #00baf1;
 }
 
@@ -144,7 +144,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 8px;
+	gap: 0.8rem;
 }
 
 .frak-bottom-bar .icon-inactive .icon-line{
