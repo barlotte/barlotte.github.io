@@ -333,8 +333,9 @@ section{
 
 .kinov-mockup {
 	position: absolute;
-	bottom: 25px;
-	 right: -92px;
+	border-radius: 18px 0 0 0;
+	bottom: 0px;
+	right: -92px;
 }
 
 
@@ -441,7 +442,6 @@ footer {
 	margin-right: 0.5rem;
 }
 
-
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 640px) {
@@ -479,6 +479,7 @@ footer {
 
 	.kinov-mockup{
 		position: absolute;
+		border-radius: 18px;
 		bottom: 70px;
 		right: -96px;
 	}
