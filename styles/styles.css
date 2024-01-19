@@ -322,7 +322,7 @@ section{
 
 .frak-mockup{
 	position: absolute;
-	bottom: -60px;
+	bottom: -78px;
 	transform: scale(0.8);
 }
 
@@ -333,8 +333,8 @@ section{
 
 .kinov-mockup {
 	position: absolute;
-	border-radius: 18px 0 0 0;
-	bottom: 0px;
+	border-radius: 1.8rem 0 0 0;
+	bottom: -5px;
 	right: -92px;
 }
 
@@ -389,8 +389,7 @@ section{
 	grid-area: pic_3;
 }
 
-
-/*  Pictures */
+/* Pictures */
 .sybel-pic-1, .frak-pic-1{
 	width: 15rem;
 }
@@ -444,7 +443,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
 	.page-container {
 		max-width: 640px;
 	}
