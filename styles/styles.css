@@ -361,7 +361,6 @@ article strong{
 	font-size: 3.2rem;
 	font-weight: 600;
 	line-height: 1;
-	margin: 0 0 2rem 0;
 }
 
 /* GRID HOMEPAGE */
@@ -441,6 +440,8 @@ article strong{
 	width: 22rem;
 	font-weight: 600;
 	font-size: 1.6rem;
+	line-height: unset;
+	margin: 0 0 2rem 0;
 }
 
 /* GRIDS PROJECT PAGES */
