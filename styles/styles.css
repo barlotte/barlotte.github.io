@@ -311,7 +311,7 @@ article strong{
 
 .bullet-delivery::before{
 	content: "🚧 ";
-}👥
+}
 
 .bullet-operations::before{
 	content: "⚙️ ";
